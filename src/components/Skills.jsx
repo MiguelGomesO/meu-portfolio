@@ -3,23 +3,23 @@ import React, { useState, useEffect } from "react";
 const Skills = () => {
     const skillsData = {
         frontend: [
-            { name: 'HTML & CSS', level: 90 },
-            { name: 'Javascript', level: 80 },
-            { name: 'React', level: 70 },
-            { name: 'Tailwind CSS', level: 70 }
+            { name: 'HTML & CSS', level: 60 },
+            { name: 'Javascript', level: 65 },
+            { name: 'React', level: 55 },
+            { name: 'Tailwind CSS', level: 55 }
         ],
         backend: [
-            { name: 'C#', level: 85 },
-            { name: 'Python', level: 70 },
-            { name: 'PHP', level: 60 },
-            { name: 'Node.js', level: 70 },
-            { name: 'SQL Server', level: 85 }
+            { name: 'C#', level: 65 },
+            { name: 'Python', level: 50 },
+            { name: 'PHP', level: 55 },
+            { name: 'Node.js', level: 50 },
+            { name: 'SQL Server', level: 65 }
         ],
         others: [
-            { name: 'Lógica da Programação', level: 90 },
-            { name: 'Refatoração de Código', level: 85 },
-            { name: 'Data Science', level: 70 },
-            { name: 'Inglês (B1)', level: 65 }
+            { name: 'Lógica da Programação', level: 65 },
+            { name: 'Refatoração de Código', level: 65 },
+            { name: 'Data Science', level: 55 },
+            { name: 'Inglês (B1)', level: 50 }
         ]
     };
 
