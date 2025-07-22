@@ -45,7 +45,7 @@ const About = () => {
                 <div className="relative">
                     <div className="w-80 h-80 bg-gradient-to-br from-gray-200 to-gray-400 rounded-2xl flex items-center justify-center shadow-2xl overflow-hidden">
                         <div className="text-6xl text-gray-600">
-                          <img className="w-64 h-64 object-cover rounded-xl shadow-lg" src="/assets_task_01k0j9tsmdfqfsf9tzxb0qqdzh_1752961064_img_0.jpg"
+                          <img className="w-64 h-64 object-cover rounded-xl shadow-lg" src="/miguel.jpg"
                           alt="Miguel - Desenvolvedor Full-stack"></img>
                         </div>
                     </div>
