@@ -117,8 +117,6 @@ No config, use o caminho **sem** `/public`:
 - Imagens: `.jpg`, `.png`, `.webp`
 - Vídeos: `.mp4`
 
-> **Deploy:** os vídeos **não vão pro Git** (são pesados). Após clonar no servidor, copie manualmente para `public/videos/` ou envie via FTP.
-
 ## Favicon
 
 O favicon redondo é gerado automaticamente a partir da foto em `config/portfolio.php`.

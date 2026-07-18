@@ -25,8 +25,3 @@ docker-compose*.yml
 .fleet
 .nova
 .zed
-
-# Vídeos pesados — enviar separado no deploy
-public/videos/*.mp4
-public/videos/*.webm
-public/videos/*.mov
