@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\View\View;
+
+class PortfolioController extends Controller
+{
+    public function index(): View
+    {
+        return view('portfolio.index', [
+            'portfolio' => config('portfolio'),
+        ]);
+    }
+}
