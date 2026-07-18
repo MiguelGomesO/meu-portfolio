@@ -76,7 +76,7 @@ return [
             'tech' => ['Laravel', 'Vue.js', 'MySQL'],
             'image' => 'images/saas.jpg',
             'url' => '#',
-            'video' => 'videos/saas.mp4', // ex: 'videos/plataforma-saas.mp4'
+            'video' => 'https://youtu.be/IjcX09dSxd8',
         ],
         [
             'title' => 'E-commerce Premium',
@@ -85,7 +85,7 @@ return [
             'tech' => ['Laravel', 'Alpine.js', 'Tailwind'],
             'image' => null,
             'url' => '#',
-            'video' => null, // ex: 'videos/ecommerce-premium.mp4'
+            'video' => null,
         ],
         [
             'title' => 'Landing Page Conversiva',
@@ -94,7 +94,7 @@ return [
             'tech' => ['HTML', 'CSS'],
             'image' => 'images/landingpage.jpg',
             'url' => '#',
-            'video' => 'videos/landingpage.mp4', // ex: 'videos/landing-page.mp4'
+            'video' => 'https://youtu.be/GL4XWPJUMFE',
         ],
     ],
 

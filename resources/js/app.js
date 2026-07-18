@@ -58,11 +58,32 @@ Alpine.data('portfolio', () => ({
 
     getProjectVideoSrc() {
         const video = this.projectModal.video;
-        if (!video) return null;
+        if (!video || this.isYoutubeVideo(video)) return null;
         if (video.startsWith('http://') || video.startsWith('https://')) {
             return video;
         }
         return '/' + video.replace(/^\//, '');
+    },
+
+    isYoutubeVideo(url) {
+        if (!url) return false;
+        return /youtu\.be|youtube\.com/.test(url);
+    },
+
+    getYoutubeEmbedUrl(url) {
+        if (!this.isYoutubeVideo(url)) return '';
+
+        let videoId = null;
+
+        if (url.includes('youtu.be/')) {
+            videoId = url.split('youtu.be/')[1].split(/[?&]/)[0];
+        } else if (url.includes('youtube.com/watch')) {
+            videoId = new URL(url).searchParams.get('v');
+        } else if (url.includes('youtube.com/embed/')) {
+            videoId = url.split('youtube.com/embed/')[1].split(/[?&]/)[0];
+        }
+
+        return videoId ? `https://www.youtube.com/embed/${videoId}` : '';
     },
 
     openProjectModal(project) {
@@ -85,6 +106,11 @@ Alpine.data('portfolio', () => ({
         if (video) {
             video.pause();
             video.currentTime = 0;
+        }
+
+        const iframe = this.$refs.modalYoutube;
+        if (iframe) {
+            iframe.src = '';
         }
     },
 

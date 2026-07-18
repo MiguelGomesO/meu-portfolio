@@ -400,8 +400,18 @@
 
             <div class="p-6">
                 <div class="aspect-video rounded-xl overflow-hidden bg-midnight border border-white/5">
+                    <iframe
+                        x-show="isYoutubeVideo(projectModal.video)"
+                        x-ref="modalYoutube"
+                        :src="projectModal.open && isYoutubeVideo(projectModal.video) ? getYoutubeEmbedUrl(projectModal.video) : ''"
+                        class="w-full h-full"
+                        title="Vídeo do projeto"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
+
                     <video
-                        x-show="projectModal.video"
+                        x-show="projectModal.video && !isYoutubeVideo(projectModal.video)"
                         x-ref="modalVideo"
                         :src="getProjectVideoSrc()"
                         class="w-full h-full object-contain bg-black"
